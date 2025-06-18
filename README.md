@@ -28,8 +28,10 @@ An example of using CSS Grid in an Angular application.
 * [Bootstrap](https://getbootstrap.com/)
 * [ng-bootstrap](https://ng-bootstrap.github.io/#/home)
 
+## Developer Notes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7 and 
+subsequently upgraded to Angular 20.
 
 ## Development server
 
