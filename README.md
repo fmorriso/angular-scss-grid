@@ -22,6 +22,7 @@ An example of using CSS Grid in an Angular application.
 
 ## References
 
+* [CSS Grid Layout Guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
 * [Angular](https://angular.dev/overview)
 * [Angular Material](https://material.angular.io/)
 * [Bootstrap](https://getbootstrap.com/)
