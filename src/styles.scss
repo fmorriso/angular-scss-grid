@@ -1,15 +1,13 @@
-@import "reset";
+@use "index" as *;
 
-@import "variables";
-
-@import "small-default";
+@use "sass:meta";
 
 //35em is also 560px (if basefont is 16px) was 35
 @media only screen and (min-width: 17em) {
-	@import "medium";
+	@include meta.load-css("medium");
 }
 
 //64em is also 1028px (if basefont is 16px) was 64
 @media only screen and (min-width: 32em) {
-	@import "large";
-} 
+  @include meta.load-css("large");
+}

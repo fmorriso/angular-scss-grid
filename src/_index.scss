@@ -1,0 +1,7 @@
+/* src/_index.scss */
+@forward "variables";   // exports the tokens to whoever loads "index"
+
+@use "reset";
+@use "small-default";   // now “index” itself generates the CSS
+@use "medium";
+@use "large";
