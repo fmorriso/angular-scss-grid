@@ -19,6 +19,7 @@ An example of using CSS Grid in an Angular application.
 | Date       | Description                                         |
 |:-----------|:----------------------------------------------------|
 | 2025-06-18 | Upgrade to Angular 20, fix CSS deprecation warnings |
+| 2025-06-19 | streamline how SCSS styles are injected.            |
 
 ## References
 
