@@ -7,15 +7,15 @@ import {HomeComponent} from './home/home.component';
 import {GridUsingCSSComponent} from './grid-using-css/grid-using-css.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent, data: {label: 'Home'} },
-  { path: 'gridcss', component: GridUsingCSSComponent, data: {label: 'CSS Grid'} },
-  { path: 'module02', component: Module02Component, data: {label: 'Module02'} },
-  { path: 'about', component: AboutComponent, data: {label: 'About'} },
+  { path: 'home', component: HomeComponent, title: 'Home' },
+  { path: 'gridcss', component: GridUsingCSSComponent, title:'CSS Grid' },
+  { path: 'module02', component: Module02Component, title: 'Module02' },
+  { path: 'about', component: AboutComponent, title: 'About' },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
 const routeOptions: ExtraOptions = {
-    enableTracing: true    
+    enableTracing: true
 };
 
 @NgModule({

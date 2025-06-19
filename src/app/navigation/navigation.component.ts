@@ -4,6 +4,7 @@ import {Router, RouterLink, RouterLinkActive} from '@angular/router';
 import {MatToolbar} from "@angular/material/toolbar";
 import {MatButton, MatIconButton} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
+import {CustomLink} from "./custom-link";
 
 @Component({
     selector: 'app-navigation',
@@ -14,7 +15,7 @@ import {MatIconModule} from "@angular/material/icon";
 })
 export class NavigationComponent implements OnInit {
 
-  links: any[] = [];
+  links: CustomLink[] = [];
 
   constructor(private router: Router) { }
 
@@ -23,12 +24,14 @@ export class NavigationComponent implements OnInit {
     // and dependency-injected into this component, which effectively shares that route information without
     // having to define a separate Angular service component.
     for (const route of this.router.config) {
-      // we only care about the ones that have a data['label'] since the others are not going to be rendered in our navigation bar
-      if (route.data && route.data['label']) {
-        this.links.push({
+      // we only care about the ones that have a title attribute since the others are not going to be rendered in our navigation bar
+      if (route.title) {
+        //WARNING: must use string interpolation to convert title from Resolve<string> to just string
+        const link: CustomLink = {
           path: `/${route.path}`,
-          label: route.data['label']
-        });
+          label: `${route.title}`
+        };
+        this.links.push(link);
       }
     }
   }
