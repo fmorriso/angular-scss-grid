@@ -1,3 +1,13 @@
+body::before {
+  content: "Medium CSS loaded";
+  position: fixed;
+  top: 4em;
+  left: 4em;
+  background: purple;
+  color: white;
+  z-index: 9999;
+}
+
 /*-----HEADER SOCIAL ICONS-----*/
 header {
 } // end header

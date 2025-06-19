@@ -1,11 +1,25 @@
 @use "variables";
 @use "reset";
-@use "small-default";
+//@use "small-default";
 
 @use "sass:meta";
 
+/*
 @media only screen and (min-width: 17em) {
 	@include meta.load-css("medium");
+}
+
+@media only screen and (min-width: 32em) {
+  @include meta.load-css("large");
+}
+*/
+
+@media only screen and  (max-width: 16.99em) {
+  @include meta.load-css("small-default");
+}
+
+@media only screen and (min-width: 17em) and (max-width: 31.99em) {
+  @include meta.load-css("medium");
 }
 
 @media only screen and (min-width: 32em) {

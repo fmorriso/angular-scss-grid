@@ -3,10 +3,12 @@ body::before {
   content: "Large CSS loaded";
   position: fixed;
   top: 4em;
-  background: lime;
-  color: black;
+  left: 4em;
+  background: darkgreen;
+  color: yellow;
   z-index: 9999;
 }
+
 /*  ------------- NAV -------------  */
 nav {
   ul {

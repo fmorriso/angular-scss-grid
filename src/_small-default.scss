@@ -21,6 +21,17 @@ body {
   font-weight: $normalWeight;
 }
 
+/*DEBUG*/
+body::before {
+  content: "Small CSS loaded";
+  position: fixed;
+  top: 4em;
+  left: 4em;
+  background: blue;
+  color: white;
+  z-index: 9999;
+}
+
 
 /*  ------------- HEADER -------------  */
 header {
