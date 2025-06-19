@@ -1,12 +1,13 @@
-<nav>
-	<ul class="clearfix">
-		@for (link of links; track link) {
-			<a [routerLink]="link.path" [routerLinkActive]="['mat-button-toggle-checked', 'active-route']"
-               #rla="routerLinkActive">
-				{{link.label}}
-			</a>
-    }
-
-	</ul>
-
-</nav>
+<mat-toolbar color="primary" class="nav-toolbar">
+  <div class="nav-grid">
+    <div class="logo">Angular CSS Grid Example</div>
+    <div class="nav-links">
+      @for (link of links; track link) {
+        <button mat-button routerLink="{{link.path}}">{{link.label}}</button>
+      }
+    </div>
+    <button mat-icon-button class="menu-icon" aria-label="Menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>

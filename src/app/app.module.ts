@@ -9,6 +9,8 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { GridUsingCSSComponent } from './grid-using-css/grid-using-css.component';
+import {MatToolbar} from "@angular/material/toolbar";
+import {MatButton, MatIconButton} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -17,12 +19,12 @@ import { GridUsingCSSComponent } from './grid-using-css/grid-using-css.component
     PageNotFoundComponent,
     AboutComponent,
     HomeComponent,
-    NavigationComponent,
     GridUsingCSSComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NavigationComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,3 +2,40 @@
   color: darkblue;
   font-weight: bold;
 }
+
+.nav-toolbar {
+  padding: 0;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  padding: 0 16px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    margin-right: 8px;
+  }
+}

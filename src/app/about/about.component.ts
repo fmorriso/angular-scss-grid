@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AngularVersionInformationService} from '../shared/angular-version-information.service';
+import {MaterialVersionInformationService} from "../shared/material-version-information.service";
 
 @Component({
     selector: 'app-about',
@@ -9,10 +10,13 @@ import {AngularVersionInformationService} from '../shared/angular-version-inform
 })
 export class AboutComponent implements OnInit {
   angularVersion: string = '';
-  constructor(private ngVersion: AngularVersionInformationService) { }
+  materialVersion: string = '';
+
+  constructor(private ngVersion: AngularVersionInformationService, private matVersionService: MaterialVersionInformationService) { }
 
   ngOnInit() {
     this.angularVersion = this.ngVersion.versionFull;
+    this.materialVersion = this.matVersionService.versionFull;
   }
 
 }

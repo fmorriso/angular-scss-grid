@@ -1,11 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import {Router, RouterLink, RouterLinkActive} from '@angular/router';
+//
+import {MatToolbar} from "@angular/material/toolbar";
+import {MatButton, MatIconButton} from "@angular/material/button";
+import {MatIconModule} from "@angular/material/icon";
 
 @Component({
     selector: 'app-navigation',
     templateUrl: './navigation.component.html',
     styleUrls: ['./navigation.component.scss'],
-    standalone: false
+    standalone: true,
+  imports: [MatToolbar, MatButton, MatIconButton, MatIconModule, RouterLink, RouterLinkActive]
 })
 export class NavigationComponent implements OnInit {
 

@@ -6,14 +6,15 @@ build process into a single .css file.
 
 ## Tools Used
 
-| Tool             |  Version |
-|:-----------------|---------:|
-| @Angular/CLI     |   20.0.3 |
-| Angular          |   20.0.3 |
-| node             |  22.16.0 |
-| npm              |   11.4.2 |
-| WebStorm         | 2025.1.2 |
-| VSCode           |  1.101.0 |
+| Tool              |  Version |
+|:------------------|---------:|
+| @Angular/CLI      |   20.0.3 |
+| Angular           |   20.0.3 |
+| @Angular/Material |   20.0.3 |
+| node              |  22.16.0 |
+| npm               |   11.4.2 |
+| WebStorm          | 2025.1.2 |
+| VSCode            |  1.101.0 |
 
 
 ## Change History
