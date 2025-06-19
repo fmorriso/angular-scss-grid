@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
     selector: 'app-module02',
     templateUrl: './module02.component.html',
     styleUrls: ['./module02.component.scss'],
-    standalone: false
+    standalone: true
 })
 export class Module02Component implements OnInit {
 

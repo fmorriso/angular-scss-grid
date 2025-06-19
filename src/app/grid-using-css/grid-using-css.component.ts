@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
     selector: 'app-grid-using-css',
     templateUrl: './grid-using-css.component.html',
     styleUrls: ['./grid-using-css.component.scss'],
-    standalone: false
+    standalone: true
 })
 export class GridUsingCSSComponent implements OnInit {
 

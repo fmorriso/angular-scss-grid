@@ -10,7 +10,7 @@ import {MatIconModule} from "@angular/material/icon";
     templateUrl: './navigation.component.html',
     styleUrls: ['./navigation.component.scss'],
     standalone: true,
-  imports: [MatToolbar, MatButton, MatIconButton, MatIconModule, RouterLink, RouterLinkActive]
+  imports: [MatToolbar, MatButton, MatIconButton, MatIconModule, RouterLink]
 })
 export class NavigationComponent implements OnInit {
 
