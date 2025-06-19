@@ -1,6 +1,8 @@
 # Angular CSS Grid
 
 An example of using CSS Grid in an Angular application.
+All styles are stored in .scss files and transpiled during the Angular
+build process into a single .css file.
 
 ## Tools Used
 
