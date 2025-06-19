@@ -1,11 +1,11 @@
 <nav>
 	<ul class="clearfix">
-		<ng-container *ngFor="let link of links">
+		@for (link of links; track link) {
 			<a [routerLink]="link.path" [routerLinkActive]="['mat-button-toggle-checked', 'active-route']"
                #rla="routerLinkActive">
 				{{link.label}}
 			</a>
-		</ng-container>
+    }
 
 	</ul>
 
