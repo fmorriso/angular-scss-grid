@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import {AngularVersionInformationService} from "./shared/angular-version-information.service";
+import {Component} from '@angular/core';
 import {NavigationComponent} from "./navigation/navigation.component";
 import {RouterOutlet} from "@angular/router";
 
@@ -14,9 +13,5 @@ import {RouterOutlet} from "@angular/router";
   standalone: true
 })
 export class AppComponent {
-  title = 'angular-css-grid';
-  angularVersion: string;
-  constructor(ngVersion: AngularVersionInformationService){
-    this.angularVersion = ngVersion.versionFull;
-  }
+  constructor() {}
 }
