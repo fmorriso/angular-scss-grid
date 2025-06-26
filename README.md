@@ -8,13 +8,13 @@ build process into a single .css file.
 
 | Tool              |  Version |
 |:------------------|---------:|
-| @Angular/CLI      |   20.0.3 |
-| Angular           |   20.0.3 |
-| @Angular/Material |   20.0.3 |
+| @Angular/CLI      |   20.0.4 |
+| Angular           |   20.0.5 |
+| @Angular/Material |   20.0.4 |
 | node              |  22.16.0 |
 | npm               |   11.4.2 |
 | WebStorm          | 2025.1.2 |
-| VSCode            |  1.101.0 |
+| VSCode            |  1.101.2 |
 
 
 ## Change History
@@ -23,6 +23,7 @@ build process into a single .css file.
 |:-----------|:----------------------------------------------------|
 | 2025-06-18 | Upgrade to Angular 20, fix CSS deprecation warnings |
 | 2025-06-19 | streamline how SCSS styles are injected.            |
+| 2025-06-25 | upgrade to Angular 20.0.4                           |
 
 ## References
 
